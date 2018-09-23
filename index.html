@@ -12,6 +12,7 @@
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <script src="https://cdn.jsdelivr.net/npm/typeit@5.10.1/dist/typeit.min.js"></script>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/bootstrap-social.css">
@@ -43,9 +44,9 @@
     </div>
     <script>
       new TypeIt('#example', {
-          speed: 80,
-          autoStart: false
-        })
+        speed: 80,
+        autoStart: false
+      })
         .type('Node.js')
         .pause(500)
         .break()
@@ -84,12 +85,39 @@
             <!-- <p>Projects that I've made.</p> -->
             <div class="row">
               <div class="col-md-4">
+                <div class="thumbnail hover2">
+                  <a href="https://mysterious-escarpment-94857.herokuapp.com/" target="_blank">
+                    <img src="img/projects/climascience.png" class="image" alt="climascience weather app" style="width:100%">
+                    <div class="middle">
+                      <div class="text">
+                        ClimaScience is a weather app built in Vue. It provides not only the current forecast for your
+                        location but beautiful visualizations of future and historical data using Chart.js as well.</div>
+                    </div>
+                    <div class="caption image">
+                      <!-- <p style="align-content: center;">gifTastic</p> -->
+                    </div>
+                    <span class="tech-item image">
+                      <i class="devicon-vuejs-plain-wordmark colored"></i>
+                      <i class="devicon-nodejs-plain colored"></i>
+                      <i class="devicon-express-original colored"></i>
+                      <i class="devicon-heroku-line-wordmark colored"></i>
+                      <!-- <img src="img/firebase.png" alt="firebase-icon"> -->
+                    </span>
+                  </a>
+                </div>
+                <a target="_blank" href="https://github.com/adambeck7/ClimaScience" class="btn btn-block btn-social btn-github">
+                  <span class="fab fa-github"></span> View the source code on GitHub.
+                </a>
+              </div>
+              <div class="col-md-4">
                 <div class="thumbnail hover1">
                   <a href="https://bike-finder-project.firebaseapp.com/" target="_blank">
                     <img src="img/projects/bike-finder2.png" class="image1" alt="bike-finder map image" style="width:100%">
                     <div class="left">
-                      <div class="text">Bike-Finder helps reconnect lost bikes with their owners by providing persistent storage of information,
-                        including images, for both lost and found bikes. I used Firebase database, Firebase Cloud Messaging,
+                      <div class="text">Bike-Finder helps reconnect lost bikes with their owners by providing
+                        persistent storage of information,
+                        including images, for both lost and found bikes. I used Firebase database, Firebase Cloud
+                        Messaging,
                         and the Google Maps Javascript API.</div>
                     </div>
                     <div class="caption image1">
@@ -109,36 +137,12 @@
                 </a>
               </div>
               <div class="col-md-4">
-                <div class="thumbnail hover2">
-                  <a href="https://adambeck7.github.io/gifTastic/giphy-api.html" target="_blank">
-                    <img src="img/projects/gifTastic.png" class="image" alt="bike-finder map image" style="width:100%">
-                    <div class="middle">
-                      <div class="text">
-                        gifTastic uses the Giphy API to bring in ten paused gifs by just clicking a button. You can dynamically generate new gif
-                        buttons of your choosing. Click any gif to make it play.</div>
-                    </div>
-                    <div class="caption image">
-                      <!-- <p style="align-content: center;">gifTastic</p> -->
-                    </div>
-                    <span class="tech-item image">
-                      <i class="devicon-javascript-plain colored"></i>
-                      <i class="devicon-html5-plain-wordmark colored"></i>
-                      <i class="devicon-css3-plain-wordmark colored"></i>
-                      <i class="devicon-jquery-plain-wordmark colored"></i>
-                      <!-- <img src="img/firebase.png" alt="firebase-icon"> -->
-                    </span>
-                  </a>
-                </div>
-                <a target="_blank" href="https://github.com/adambeck7/gifTastic" class="btn btn-block btn-social btn-github">
-                  <span class="fab fa-github"></span> View the source code on GitHub.
-                </a>
-              </div>
-              <div class="col-md-4">
                 <div class="thumbnail hover3">
                   <a href="https://github.com/adambeck7/Language-Interpretation-and-Recognition-Interface" target="_blank">
                     <img src="img/projects/LIRI.png" class="image" alt="bike-finder map image" style="width:100%">
                     <div class="right">
-                      <div class="text">LIRI is a node application that will search OMDB, Spotify and The New York Times based on your input.</div>
+                      <div class="text">LIRI is a node application that will search OMDB, Spotify and The New York
+                        Times based on your input.</div>
                     </div>
                     <div class="caption image">
                       <!-- <p style="align-content: center;">Colorado Trivia</p> -->
@@ -151,10 +155,12 @@
                     </span>
                   </a>
                 </div>
-                <a target="_blank" href="https://github.com/adambeck7/Language-Interpretation-and-Recognition-Interface" class="btn btn-block btn-social btn-github">
+                <a target="_blank" href="https://github.com/adambeck7/Language-Interpretation-and-Recognition-Interface"
+                  class="btn btn-block btn-social btn-github">
                   <span class="fab fa-github"></span> View the source code on GitHub.
                 </a>
               </div>
+
               <!-- <div class="col-md-4">
                 <div class="thumbnail hover3">
                   <a href="https://adambeck7.github.io/CO-Trivia/" target="_blank">
@@ -185,7 +191,8 @@
                   <a href="https://github.com/adambeck7/node-mysql-store" target="_blank">
                     <img src="img/node_sql_store.png" class="image1" alt="terminal image" style="width:100%">
                     <div class="left">
-                      <div class="text">This is a storefront built with MySQL and Node. You can order items as a customer or check, add and
+                      <div class="text">This is a storefront built with MySQL and Node. You can order items as a
+                        customer or check, add and
                         adjust inventory as a manager.</div>
                     </div>
                     <div class="caption image1">
@@ -209,7 +216,8 @@
                   <a href="https://pure-wave-41572.herokuapp.com/" target="_blank">
                     <img src="img/projects/orderUp.png" class="image1" alt="orderUp image" style="width:100%">
                     <div class="left">
-                      <div class="text">OrderUp uses MySQL, Node, Express, Handlebars and a homemade ORM to serve up and devour whatever you'd
+                      <div class="text">OrderUp uses MySQL, Node, Express, Handlebars and a homemade ORM to serve up
+                        and devour whatever you'd
                         like (or send it back if you don't).</div>
                     </div>
                     <div class="caption image1">
@@ -219,13 +227,39 @@
                       <i class="devicon-mysql-plain-wordmark colored"></i>
                       <i class="devicon-javascript-plain colored"></i>
                       <i class="devicon-nodejs-plain-wordmark colored"></i>
-                      <i class="devicon-express-plain-wordmark colored"></i>
+                      <i class="devicon-express-original-wordmark"></i>
 
                       <!-- <img src="img/firebase.png" alt="firebase-icon"> -->
                     </span>
                   </a>
                 </div>
                 <a target="_blank" href="https://github.com/adambeck7/OrderUp" class="btn btn-block btn-social btn-github">
+                  <span class="fab fa-github"></span> View the source code on GitHub.
+                </a>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail hover2">
+                  <a href="https://adambeck7.github.io/gifTastic/giphy-api.html" target="_blank">
+                    <img src="img/projects/gifTastic.png" class="image" alt="bike-finder map image" style="width:100%">
+                    <div class="middle">
+                      <div class="text">
+                        gifTastic uses the Giphy API to bring in ten paused gifs by just clicking a button. You can
+                        dynamically generate new gif
+                        buttons of your choosing. Click any gif to make it play.</div>
+                    </div>
+                    <div class="caption image">
+                      <!-- <p style="align-content: center;">gifTastic</p> -->
+                    </div>
+                    <span class="tech-item image">
+                      <i class="devicon-javascript-plain colored"></i>
+                      <i class="devicon-html5-plain-wordmark colored"></i>
+                      <i class="devicon-css3-plain-wordmark colored"></i>
+                      <i class="devicon-jquery-plain-wordmark colored"></i>
+                      <!-- <img src="img/firebase.png" alt="firebase-icon"> -->
+                    </span>
+                  </a>
+                </div>
+                <a target="_blank" href="https://github.com/adambeck7/gifTastic" class="btn btn-block btn-social btn-github">
                   <span class="fab fa-github"></span> View the source code on GitHub.
                 </a>
               </div>
@@ -284,7 +318,7 @@
       </div>
     </div>
 
-    </div>
+  </div>
 
 </body>
 
